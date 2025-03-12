@@ -1,0 +1,36 @@
+/*Seleciona o elemento html*/
+html{
+    /*define a altura e largura do elemento*/
+    width:100vw; /*deixa mais responsivo*/
+    height: 100vh; /*deixa mais responsivo*/
+
+}
+
+body{
+    /*define imagem de fundo*/
+   background: 
+        url(./imgs/passaros.png), 
+        url(./imgs/nuvem.png), 
+        url(./imgs/grama.png),
+        url(./imgs/esquilo.png);
+    /*define tamanho da imagem de fundo*/
+   background-size: 
+    50%,
+     /*fica no tamanho padrão*/
+    auto,
+    auto,
+    250px;
+   /*define a repetição da imagem de fundo*/
+   background-repeat: 
+   no-repeat,
+   no-repeat,
+   repeat-x,
+   no-repeat;
+      /*define a posição da imagem de fundo*/
+    background-position: 
+    top right,
+    top left,
+    bottom,
+    bottom right;
+}
+
