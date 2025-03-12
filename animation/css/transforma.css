@@ -1,0 +1,4 @@
+/*translete move um elemento movemos 100px para a direita e 90px para baixo*/
+#car1{
+    transform: translate(100px, 90px);
+}
