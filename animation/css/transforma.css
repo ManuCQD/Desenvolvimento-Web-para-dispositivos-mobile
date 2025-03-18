@@ -1,4 +1,77 @@
-/*translete move um elemento movemos 100px para a direita e 90px para baixo*/
+/*eu que coloquei*/
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*translete move um elemento movemos 100px
+ para a direita e 90px para baixo
+ translate(horizontal, vertical)*/
 #car1{
     transform: translate(100px, 90px);
 }
+
+/*rotate rotaciona um elemento em x graus/dregrees(deg)*/
+#car2{ 
+    transform: rotate(45deg); /*rotacionando em 45 graus*/
+}
+/*scale defina a escala di elemento, diminuindo ou aumentando*/
+#car3{
+    transform: scale(1.7, 2); /*largura x altura */
+}
+
+/*ao passar o mouse sobre ele diminuiu a escala na horizontal em 5*/
+#car4:hover{
+    transform: scaleX(0.5); /*largura x altura */
+}
+
+/**/
+#car4{
+    transition: transform 5s;
+}
+
+#car5{
+    width: 250px;
+    height: 250px;
+    transition: width 5s, height 2s;
+}
+
+#car5:hover{
+    width: 350px;
+    height: 350px;
+}
+
+#car6:hover{
+    transform:
+        translate(250px, 80px) rotate(10deg);
+}
+
+#car6{
+    transition: transform 3s;
+    /*define um tempo de atraso para iniciar a transição*/
+    transition-delay: 1s;    
+}
+
+
+
+
+
+.btn{
+    position: static;
+    width: 50%;
+    top: 20px;
+    right: 50px;
+    background-color: pink;
+    border: solid pink 5px ;
+} 
+
+.btn::before{
+    content: "#";
+    position: relative;
+    top: 0;
+    right: 390px;
+    background-color: blue;
+}
+

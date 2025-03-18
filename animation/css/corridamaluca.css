@@ -1,3 +1,24 @@
 /*Código da animação
 A palavra "keyframes" indica que é 
 uma animação*/
+
+@keyframes acelera/*nome da animação*/ {
+    from{ /*define o estado inicial*/
+        margin: 0;
+    }
+    to{ /*define o estado final*/
+        /* margin-left:950px ; */
+        transform: translatex(950px);
+    }
+    
+}
+
+
+/* seleciona os elementos com a classe carro */
+.carro{
+    width: 110px; /*largura do elemento*/
+    /*define o nome da animção que será usada pelo elemento*/
+    animation-name: acelera;
+    /*precisa definir uma duração se não, não funciona*/
+    animation-duration: 8s; /*define uma duração*/
+}
