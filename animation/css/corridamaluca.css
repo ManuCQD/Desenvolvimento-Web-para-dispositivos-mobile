@@ -22,3 +22,44 @@ uma animação*/
     /*precisa definir uma duração se não, não funciona*/
     animation-duration: 8s; /*define uma duração*/
 }
+
+#car1{
+    /* linear mantém a mesma velocidade de animação */
+    animation-timing-function: linear;
+    /* define a direção da animação  */
+    animation-direction: reverse;
+}
+
+#car2{
+    /*começa lento/ fica rápido/ termina lento*/
+    animation-timing-function: ease;
+    /*defini quantas vezes ocorre a animação*/
+    animation-iteration-count: 3;
+    /*executa a nimção do incio ao fim depois ao contrário*/
+    animation-direction: alternate;
+}
+
+#car3{
+        /*começa lento, termina rápido*/
+    animation-timing-function: ease-in;
+    /*executa a animção do final para o incio e depois ao contrário*/
+    animation-direction: alternate-reverse  ;
+    animation-iteration-count: infinite;
+}
+
+#car4{
+    /* começa rápido termina lento  */
+    animation-timing-function: ease-in-out;
+}
+
+#car5{
+    /* começa lento,fica rápido,temina lento */
+    animation-timing-function: ease-in-out;
+}
+
+#car6{
+    /* define um tempo de atraso da animção antes da animação iniciar  */
+    animation-delay:  2s;
+}
+
+

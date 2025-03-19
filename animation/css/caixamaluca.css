@@ -1,3 +1,45 @@
 /*Código da animação
 A palavra "keyframes" indica que é 
 uma animação*/
+@keyframes mover{
+    0%{
+        margin: 0;
+    }
+    30%{
+        margin-top: 25px;
+        margin-left: 450px;
+        background-color: lightsalmon;
+    }
+    60%{
+        margin-left: 700px;
+        margin-top:400px;
+        background-color: lightblue;
+        transform: rotate(180deg);
+    }
+    100%{
+        margin-left: 200px;
+        margin-top: 50px;
+        border-radius: 60%;
+        background-color: pink;
+    }
+}
+
+
+body{
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: pink; */
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: mover 10s infinite;
+
+
+}

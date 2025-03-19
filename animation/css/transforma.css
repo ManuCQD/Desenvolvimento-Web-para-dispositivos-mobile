@@ -6,6 +6,18 @@
     box-sizing: border-box;
 }
 
+
+@keyframes move/*nome da animação*/ {
+    from{ /*define o estado inicial*/
+        margin: 0;
+    }
+    to{ /*define o estado final*/
+        /* margin-left:950px ; */
+        transform: translatex(950px);
+    }
+    
+}
+
 /*translete move um elemento movemos 100px
  para a direita e 90px para baixo
  translate(horizontal, vertical)*/
@@ -54,24 +66,19 @@
     transition-delay: 1s;    
 }
 
-
-
-
-
-.btn{
-    position: static;
+/*teste/
+.a{
     width: 50%;
-    top: 20px;
-    right: 50px;
+    position: static;
     background-color: pink;
     border: solid pink 5px ;
 } 
 
-.btn::before{
-    content: "#";
+.btn{
     position: relative;
     top: 0;
-    right: 390px;
+    right: 10px;
+    animation-name: move;
+    animation-duration: 10s;
     background-color: blue;
 }
-
