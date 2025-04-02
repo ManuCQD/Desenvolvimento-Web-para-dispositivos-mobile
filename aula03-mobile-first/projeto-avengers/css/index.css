@@ -6,5 +6,44 @@
 }
 
 body{
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    /* Define a família padrão da página */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Define tamanho padrão da fonte */
+    font-size: 16px;
+    /* Define a cor padrão da fonte */
+    color: #333;
+    /* Define o alinhamento do texto */
+    text-align: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+    min-width: 500px;
+}
+
+header {
+    background-color: #333;
+}
+
+.logo{
+    width: 20%;
+} 
+
+.nav-container a{
+    text-decoration: none;
+}
+
+.nav-container .lista{
+    list-style: none;
+}
+
+img{
+    min-width:400px;
+    max-width: 700px;
 }
