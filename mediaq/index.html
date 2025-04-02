@@ -7,15 +7,23 @@
     <title>Midia Q!</title>
     <style>
         body{
-            background-color: pink;
+            background-color: pink; /*cor padrão*/
         }
         /* quando não tem suporte para midia query */
         /*aplica a regra de css, somente e o viewport tiver no máx 800px de largura*/
-        @media only screen and (max-width:800px){
+        @media only screen and (max-width:800px){ /*menos que 800 aplica*/
             body{
                 background-color: rgb(189, 90, 235);
             }
         }
+        /*aplica a regra de css, somente e o viewport tiver no máx 500px de largura*/
+        @media only screen and (max-width: 700px){ /*menos 500 aplica*/
+            body{
+                background-color: rgb(121, 90, 235);
+            }
+        }
+    
+
     </style>
 </head>
 <body>
