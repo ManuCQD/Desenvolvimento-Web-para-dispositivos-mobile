@@ -181,3 +181,10 @@ footer a{
     text-decoration: none;
 }
 
+
+/*site visualizado pelo devtool*/
+/*media*/
+/* VP menor que 675 */
+@media only screen and (max-width:675px){  /*max width pq o design ta desktop firts pra mobile*/
+    
+}
