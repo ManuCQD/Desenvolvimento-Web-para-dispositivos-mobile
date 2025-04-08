@@ -7,7 +7,6 @@ body{
 .wrapper{
     width: 100%;
     max-width: 1180px;
-    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -215,6 +214,11 @@ footer a{
         flex: 1;   
     }
 
+    #home-menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+    }
 
     #home-menu li{
         width: 80%;
@@ -230,7 +234,20 @@ footer a{
         margin: 20px 0;
     }
 
-    #featured li{
+    .featured-list li{
         width: 47%;
+    }
+}
+
+
+@media only screen and (max-width: 554px){
+
+    .header_list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured-list{
+        
     }
 }
